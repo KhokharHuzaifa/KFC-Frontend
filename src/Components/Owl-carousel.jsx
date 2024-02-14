@@ -9,7 +9,7 @@ const Owlcarousel = ({ OwlItems }) => {
     }
   return (
     <>
-          <OwlCarousel className='owl-theme' loop margin={25} touchDrag {...options}> 
+          <OwlCarousel loop margin={25} touchDrag {...options}> 
           {
             OwlItems.map((items)=><RenderOwlCarousel Items={items} key={items.id}/>)
           }
