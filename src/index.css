@@ -103,7 +103,6 @@ body {
 /* Carousel css */
 .carousel-image {
   width: 100%;
-  margin-top: 104px;
   cursor: pointer;
 }
 .carousel-control-prev,
@@ -114,13 +113,11 @@ body {
   color: rgb(234, 0, 42);
   font-size: 20px;
   margin-left: 60px;
-  margin-top: 100px;
 }
 .next-ico {
   color: rgb(234, 0, 42);
   font-size: 20px;
   margin-right: 60px;
-  margin-top: 100px;
 }
 /* Carousel css end*/
 
@@ -404,8 +401,6 @@ div.scroll-container img {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    align-items: center;
-    /* margin: 0px 0px; */
     padding-top: 5px;
   }
   #logo {
@@ -427,13 +422,6 @@ div.scroll-container img {
   }
   #login-div {
     display: none;
-  }
-  .carousel-image {
-    margin-top: 118px;
-  }
-  .next-ico,
-  .prev-ico {
-    margin-top: 120px;
   }
   .owl-img-cont {
     width: 170px;
@@ -483,13 +471,6 @@ div.scroll-container img {
   #Nav-btn {
     padding: 6px 25px;
     font-size: 15px;
-  }
-  .carousel-image {
-    margin-top: 139px;
-  }
-  .next-ico,
-  .prev-ico {
-    margin-top: 150px;
   }
   .scroll-container-card {
     height: 55vh !important;

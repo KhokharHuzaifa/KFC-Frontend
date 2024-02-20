@@ -1,13 +1,15 @@
+import { Link } from "react-router-dom"
+
 const Navigation = () => {
     return (
         <>
-            <nav className="navbar navbar-dark fixed-top" id="Navbar">
+            <nav className="navbar navbar-dark" id="Navbar">
                 <div id="nav-top-wrapper">
                         <div>
-                            <i className="ri-menu-2-line bars-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation"></i>
+                            <i className="ri-menu-2-line bars-icon" style={{cursor:'pointer'}} data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation"></i>
                         </div>
                         <div>
-                        <a className="navbar-brand ms-1" href="https://www.kfcpakistan.com/"><img src="/Images/kfc-logo.png" alt="" id="logo" /></a>
+                        <Link className="navbar-brand ms-1" to={'/'}><img src="/Images/kfc-logo.png" alt="" id="logo" /></Link>
                         </div>
                     <div id="login-div">
                         <a target="blank" href="https://www.kfcpakistan.com/login"><button className="btn text-light" id="login-btn">LOGIN</button></a>
@@ -42,10 +44,10 @@ const Navigation = () => {
                             </li>
                             </a>
                             <hr id="offcanvas-row" style={{marginTop:'30px'}}/>
-                            <a target="blank" href="https://www.kfcpakistan.com/about-us"><li className="nav-item mt-2" id="offcanvas-text">
+                            <Link to={'/about'}><li className="nav-item mt-2" id="offcanvas-text">
                                 <h6 className="canvas-text">About Us</h6>
                             </li>
-                            </a>
+                            </Link>
                             <a target="blank" href="https://www.kfcpakistan.com/feedBack"><li className="nav-item mt-2" id="offcanvas-text">
                                 <h6 className="canvas-text">FeedBack</h6>
                             </li>
@@ -58,10 +60,10 @@ const Navigation = () => {
                                 <h6 className="canvas-text">Privacy Policy</h6>
                             </li>
                             </a>
-                            <a target="blank" href="https://www.kfcpakistan.com/contact-Us"><li className="nav-item mt-2" id="offcanvas-text">
+                            <Link to={'/contact'}><li className="nav-item mt-2" id="offcanvas-text">
                                 <h6 className="canvas-text">Contact Us</h6>
                             </li>
-                            </a>
+                            </Link>
                             <a target="blank" href="https://www.kfcpakistan.com/mitao-Bhook"><li className="nav-item mt-2" id="offcanvas-text">
                                 <h6 className="canvas-text">Mitao Bhook</h6>
                             </li>
